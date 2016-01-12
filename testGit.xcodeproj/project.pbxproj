@@ -22,6 +22,7 @@
 		284695E01C4453AA000CAC70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		284695E31C4453AA000CAC70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		284695E51C4453AA000CAC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		285869D51C45BE7D00301C4C /* MiniGame.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MiniGame.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 		284695CD1C4453AA000CAC70 = {
 			isa = PBXGroup;
 			children = (
+				285869D51C45BE7D00301C4C /* MiniGame.playground */,
 				284695D81C4453AA000CAC70 /* testGit */,
 				284695D71C4453AA000CAC70 /* Products */,
 			);
@@ -286,6 +288,7 @@
 				284695EA1C4453AA000CAC70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
