@@ -8,18 +8,23 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var boton: UIButton!
+    @IBOutlet weak var pais: UILabel!
+    @IBOutlet weak var hamburguesa: UILabel!
+    
+
+    
+    @IBAction func mostrar(sender: AnyObject) {
+        
+        let pais = Paises()
+        let ham = Hamburguesas()
+        
+        
+        self.pais.text = ( "Pais: \(pais.obtenerPais())" )
+        self.hamburguesa.text = ham.obtenerHamburguesa()
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-
