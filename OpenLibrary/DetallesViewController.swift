@@ -28,9 +28,11 @@ class DetallesViewController: UIViewController {
         
         // Autores
         var buffer = ""
-            
+        
         for autor in libro.autores {
-            buffer.appendContentsOf( String(format: "%@\n", autor ) )
+            
+            buffer.appendContentsOf( String(format: "%@\n", autor.valueForKey!("nombre") as! String) )
+            
         }
         
         self.autores.text = buffer
@@ -38,9 +40,7 @@ class DetallesViewController: UIViewController {
 
         // Imagen de portada
         if libro.portada != nil {
-            let url = NSURL( string: libro.portada! )
-            let data = NSData(contentsOfURL: url!)
-            self.portada.image = UIImage(data: data!)
+            self.portada.image = UIImage(data: libro.portada!)
         }
 
     }

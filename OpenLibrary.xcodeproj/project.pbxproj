@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2818F7501C619F2A002E4615 /* DetallesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2818F74F1C619F2A002E4615 /* DetallesViewController.swift */; };
+		282046101C6529720077C7E6 /* OpenLibrary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2820460E1C6529720077C7E6 /* OpenLibrary.xcdatamodeld */; };
 		2855179C1C61DD060002CE33 /* InicialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855179B1C61DD060002CE33 /* InicialViewController.swift */; };
-		2855179E1C61E2E10002CE33 /* Libro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855179D1C61E2E10002CE33 /* Libro.swift */; };
 		285517A01C61EB410002CE33 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855179F1C61EB410002CE33 /* Helper.swift */; };
+		285F26561C66D17B00584A57 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F26551C66D17B00584A57 /* CoreDataStack.swift */; };
+		2894128F1C67F8AD007A3110 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2894128E1C67F8AD007A3110 /* Info.plist */; };
+		289412941C680214007A3110 /* Libro+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289412901C680214007A3110 /* Libro+CoreDataProperties.swift */; };
+		289412951C680214007A3110 /* Libro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289412911C680214007A3110 /* Libro.swift */; };
+		289412961C680214007A3110 /* Autor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289412921C680214007A3110 /* Autor+CoreDataProperties.swift */; };
+		289412971C680214007A3110 /* Autor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289412931C680214007A3110 /* Autor.swift */; };
 		28A99D001C6286450038B328 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A99CFF1C6286450038B328 /* SwiftyJSON.swift */; };
 		28A99D021C62A9580038B328 /* libroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A99D011C62A9580038B328 /* libroCell.swift */; };
 		28F3A2351C472ED6007C1453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F3A2341C472ED6007C1453 /* AppDelegate.swift */; };
@@ -22,9 +28,15 @@
 
 /* Begin PBXFileReference section */
 		2818F74F1C619F2A002E4615 /* DetallesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetallesViewController.swift; sourceTree = "<group>"; };
+		2820460F1C6529720077C7E6 /* OpenLibrary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenLibrary.xcdatamodel; sourceTree = "<group>"; };
 		2855179B1C61DD060002CE33 /* InicialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicialViewController.swift; sourceTree = "<group>"; };
-		2855179D1C61E2E10002CE33 /* Libro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Libro.swift; sourceTree = "<group>"; };
 		2855179F1C61EB410002CE33 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		285F26551C66D17B00584A57 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		2894128E1C67F8AD007A3110 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		289412901C680214007A3110 /* Libro+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Libro+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		289412911C680214007A3110 /* Libro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Libro.swift; sourceTree = "<group>"; };
+		289412921C680214007A3110 /* Autor+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Autor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		289412931C680214007A3110 /* Autor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Autor.swift; sourceTree = "<group>"; };
 		28A99CFF1C6286450038B328 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		28A99D011C62A9580038B328 /* libroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = libroCell.swift; sourceTree = "<group>"; };
 		28F3A2311C472ED6007C1453 /* OpenLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,7 +45,6 @@
 		28F3A2391C472ED6007C1453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28F3A23B1C472ED6007C1453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28F3A23E1C472ED6007C1453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		28F3A2401C472ED6007C1453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,11 +58,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		289412981C68345B007A3110 /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+				289412901C680214007A3110 /* Libro+CoreDataProperties.swift */,
+				289412911C680214007A3110 /* Libro.swift */,
+				289412921C680214007A3110 /* Autor+CoreDataProperties.swift */,
+				289412931C680214007A3110 /* Autor.swift */,
+			);
+			name = Clases;
+			sourceTree = "<group>";
+		};
+		289412991C68347D007A3110 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				285F26551C66D17B00584A57 /* CoreDataStack.swift */,
+				28A99CFF1C6286450038B328 /* SwiftyJSON.swift */,
+				2855179F1C61EB410002CE33 /* Helper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		28F3A2281C472ED5007C1453 = {
 			isa = PBXGroup;
 			children = (
-				28A99CFF1C6286450038B328 /* SwiftyJSON.swift */,
-				2855179F1C61EB410002CE33 /* Helper.swift */,
+				289412991C68347D007A3110 /* Helpers */,
+				289412981C68345B007A3110 /* Clases */,
 				28F3A2331C472ED6007C1453 /* OpenLibrary */,
 				28F3A2321C472ED6007C1453 /* Products */,
 			);
@@ -73,11 +105,11 @@
 				28F3A2381C472ED6007C1453 /* Main.storyboard */,
 				28F3A23B1C472ED6007C1453 /* Assets.xcassets */,
 				28F3A23D1C472ED6007C1453 /* LaunchScreen.storyboard */,
-				28F3A2401C472ED6007C1453 /* Info.plist */,
 				2818F74F1C619F2A002E4615 /* DetallesViewController.swift */,
 				2855179B1C61DD060002CE33 /* InicialViewController.swift */,
-				2855179D1C61E2E10002CE33 /* Libro.swift */,
 				28A99D011C62A9580038B328 /* libroCell.swift */,
+				2894128E1C67F8AD007A3110 /* Info.plist */,
+				2820460E1C6529720077C7E6 /* OpenLibrary.xcdatamodeld */,
 			);
 			path = OpenLibrary;
 			sourceTree = "<group>";
@@ -108,7 +140,7 @@
 		28F3A2291C472ED5007C1453 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Billy Rangel";
 				TargetAttributes = {
@@ -140,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2894128F1C67F8AD007A3110 /* Info.plist in Resources */,
 				28F3A23F1C472ED6007C1453 /* LaunchScreen.storyboard in Resources */,
 				28F3A23C1C472ED6007C1453 /* Assets.xcassets in Resources */,
 				28F3A23A1C472ED6007C1453 /* Main.storyboard in Resources */,
@@ -153,13 +186,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2855179E1C61E2E10002CE33 /* Libro.swift in Sources */,
+				289412971C680214007A3110 /* Autor.swift in Sources */,
 				285517A01C61EB410002CE33 /* Helper.swift in Sources */,
 				28A99D021C62A9580038B328 /* libroCell.swift in Sources */,
+				289412941C680214007A3110 /* Libro+CoreDataProperties.swift in Sources */,
+				285F26561C66D17B00584A57 /* CoreDataStack.swift in Sources */,
+				289412961C680214007A3110 /* Autor+CoreDataProperties.swift in Sources */,
 				2855179C1C61DD060002CE33 /* InicialViewController.swift in Sources */,
+				289412951C680214007A3110 /* Libro.swift in Sources */,
 				2818F7501C619F2A002E4615 /* DetallesViewController.swift in Sources */,
 				28F3A2371C472ED6007C1453 /* BusquedaViewController.swift in Sources */,
 				28A99D001C6286450038B328 /* SwiftyJSON.swift in Sources */,
+				282046101C6529720077C7E6 /* OpenLibrary.xcdatamodeld in Sources */,
 				28F3A2351C472ED6007C1453 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,11 +311,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = OpenLibrary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = billy.OpenLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -285,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = OpenLibrary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -315,6 +356,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2820460E1C6529720077C7E6 /* OpenLibrary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2820460F1C6529720077C7E6 /* OpenLibrary.xcdatamodel */,
+			);
+			currentVersion = 2820460F1C6529720077C7E6 /* OpenLibrary.xcdatamodel */;
+			path = OpenLibrary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 28F3A2291C472ED5007C1453 /* Project object */;
 }

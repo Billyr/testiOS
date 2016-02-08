@@ -7,14 +7,32 @@
 //
 
 import UIKit
+import CoreData
 
 class InicialViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    var context : NSManagedObjectContext!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let busqueda = NSFetchRequest(entityName: "Libro")
+
+        
+        do {
+            let datos = try context.executeFetchRequest(busqueda) as! [Libro]
+            
+            if datos.count > 0 {
+                libros = datos
+                tableView.reloadData()
+            }
+            
+        } catch {
+            print("\(error)")
+        }
+        
         
     }
 
@@ -54,10 +72,37 @@ class InicialViewController: UIViewController, UITableViewDataSource, UITableVie
         
     }
     
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if editingStyle == .Delete {
+            
+            let libro = libros[indexPath.row]
+            
+            context.deleteObject(libro)
+            
+            do {
+                
+                try context.save()
+                libros.removeAtIndex(indexPath.row)
+            } catch {
+                print("\(error)")
+            }
+            
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            
+        }
+        
+        
+    }
 
     @IBAction func irBusqueda(sender: AnyObject) {
         
         let busqueda = self.storyboard?.instantiateViewControllerWithIdentifier("busqueda") as! BusquedaViewController
+        busqueda.context = context
         self.navigationController?.pushViewController(busqueda, animated: true)
         
     }
