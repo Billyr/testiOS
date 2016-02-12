@@ -12,7 +12,6 @@
 		2855179C1C61DD060002CE33 /* InicialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855179B1C61DD060002CE33 /* InicialViewController.swift */; };
 		285517A01C61EB410002CE33 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2855179F1C61EB410002CE33 /* Helper.swift */; };
 		285F26561C66D17B00584A57 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F26551C66D17B00584A57 /* CoreDataStack.swift */; };
-		2894128F1C67F8AD007A3110 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2894128E1C67F8AD007A3110 /* Info.plist */; };
 		289412941C680214007A3110 /* Libro+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289412901C680214007A3110 /* Libro+CoreDataProperties.swift */; };
 		289412951C680214007A3110 /* Libro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289412911C680214007A3110 /* Libro.swift */; };
 		289412961C680214007A3110 /* Autor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289412921C680214007A3110 /* Autor+CoreDataProperties.swift */; };
@@ -141,7 +140,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Billy Rangel";
 				TargetAttributes = {
 					28F3A2301C472ED5007C1453 = {
@@ -172,7 +171,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2894128F1C67F8AD007A3110 /* Info.plist in Resources */,
 				28F3A23F1C472ED6007C1453 /* LaunchScreen.storyboard in Resources */,
 				28F3A23C1C472ED6007C1453 /* Assets.xcassets in Resources */,
 				28F3A23A1C472ED6007C1453 /* Main.storyboard in Resources */,
@@ -260,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -299,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
